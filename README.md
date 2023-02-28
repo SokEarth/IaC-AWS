@@ -1,10 +1,30 @@
-# Udacity Project 2
-# Deploy Infrastructure as Code (*IAC*)
+#  Infrastructure as Code
+## This repository contains IaC that deploys a high-availability web app using CloudFormation.
 
-# Output
-Server stack output DNS: http://serve-webap-sz3u2auqbzfc-1861071857.us-east-1.elb.amazonaws.com.
+## Dependencies
+1. AWS account
+You would require to have an AWS account to be able to build cloud infrastructure.
 
-# Files included:
+2. VS code editor
+An editor would be helpful to visualize the image as well as code. Download the VS Code editor here.
+
+3. An account on www.lucidchart.com
+A free user-account on www.lucidchart.com is required to be able to draw the web app architecture diagrams for AWS.
+
+## How to run the supporting material?
+You can run the supporting material in two easy steps:
+`
+# Ensure that the AWS CLI is configured before runniing the command below
+# Create the network infrastructure
+# Check the region in the create.sh file
+./create.sh myFirstStack network.yml network-parameters.json
+# Create servers
+# Change the AMI ID and key-pair name in the servers.yml
+# Check the region in the update.sh file
+./update.sh mySecStack servers.yml server-parameters.json
+`
+
+## Files included:
 - `network.yml` (./network.yml) - CloudFormation network infrastructure stack description.
 
 - `network-parameters.json` (./network-parameters.json) - Parameters file for the network infrastructure stack
