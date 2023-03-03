@@ -5,7 +5,7 @@
 1. AWS account
 You would require to have an AWS account to be able to build cloud infrastructure.
 
-2. VS code editor
+2. VS code editor or any other editor
 An editor would be helpful to visualize the image as well as code. Download the VS Code editor here.
 
 3. An account on www.lucidchart.com
